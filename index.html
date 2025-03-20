@@ -52,16 +52,16 @@
     <meta name="description" content="Track your daily activities and todos" />
     <link rel="manifest" href="./daily-planner/assets/manifest-CZA1KhDS.json" />
     <meta name="theme-color" content="#000000" />
-    <link rel="icon" type="image/png" href="./daily-planner/icon-192x192.png" />
-    <script type="module" crossorigin src="./daily-planner/assets/index-MIvRwTHU.js"></script>
-    <link rel="stylesheet" crossorigin href="./daily-planner/assets/index-BbiFF5V4.css">
+    <link rel="icon" type="image/png" href="./icon-192x192.png" />
+    <script type="module" crossorigin src="./assets/index-MIvRwTHU.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BbiFF5V4.css">
   </head>
   <body>
     <div id="root"></div>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/public/serviceWorker.js').catch(error => {
+          navigator.serviceWorker.register('./serviceWorker.js').catch(error => {
             console.log('ServiceWorker registration failed:', error);
           });
         });
